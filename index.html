@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <nav class="nav container">
+        <a href="#" class="logo">
+            <span>COCOA</span>LUXE
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#collection" class="nav-link">Collection</a></li>
+            <li><a href="#about" class="nav-link">Our Story</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="icon-btn" aria-label="Search">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+            <button class="icon-btn cart-toggle" aria-label="Cart">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                <span class="cart-count">0</span>
+            </button>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="badge">Artisanal Excellence</span>
+                <h1>Indulge in the Art of <span class="highlight">Fine Chocolate</span></h1>
+                <p>Handcrafted with the world's rarest cacao beans and aged to perfection for a symphony of flavors that dance on your palate.</p>
+                <div class="hero-btns">
+                    <a href="#collection" class="btn btn-primary">Shop Collection</a>
+                    <a href="#about" class="btn btn-outline">Our Process</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1548907040-4baa42d10919?auto=format&fit=crop&q=80&w=800" alt="Exquisite dark chocolate truffles">
+                    <div class="floating-card">
+                        <p>100% Organic Cacao</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="collection" class="collection section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Signature Collections</h2>
+                <p>Explore our curated selection of premium chocolates</p>
+            </div>
+            
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="truffles">Truffles</button>
+                <button class="filter-btn" data-filter="bars">Dark Bars</button>
+                <button class="filter-btn" data-filter="gift">Gift Sets</button>
+            </div>
+
+            <div class="product-grid">
+                <article class="product-card" data-category="truffles">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&q=80&w=500" alt="Sea Salt Caramel">
+                        <button class="add-to-cart-btn" aria-label="Add to cart">+</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sea Salt Caramel</h3>
+                        <p>60% Dark Chocolate shell with liquid caramel</p>
+                        <span class="price">$24.00</span>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="bars">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&q=80&w=500" alt="Madagascar Dark">
+                        <button class="add-to-cart-btn" aria-label="Add to cart">+</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Madagascar Dark</h3>
+                        <p>Single origin 85% cacao with fruity notes</p>
+                        <span class="price">$12.00</span>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="gift">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&q=80&w=500" alt="Velvet Box Set">
+                        <button class="add-to-cart-btn" aria-label="Add to cart">+</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Velvet Box Set</h3>
+                        <p>A collection of our top 12 signature pieces</p>
+                        <span class="price">$48.00</span>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="truffles">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1542310191-2244a205e261?auto=format&fit=crop&q=80&w=500" alt="Hazelnut Praline">
+                        <button class="add-to-cart-btn" aria-label="Add to cart">+</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hazelnut Praline</h3>
+                        <p>Roasted Piedmont hazelnuts in milk chocolate</p>
+                        <span class="price">$22.00</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about section">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1526081347589-7fa3cb41b4b2?auto=format&fit=crop&q=80&w=800" alt="Chocolatier at work">
+            </div>
+            <div class="about-content">
+                <span class="subheading">Since 1982</span>
+                <h2>Crafting Memories, One Bite at a Time</h2>
+                <p>Every piece of CocoaLuxe chocolate is a masterpiece. We travel the world to find the finest ingredients, from Tahitian vanilla to Himalayan pink salt, ensuring every bite is an experience.</p>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">🌿</div>
+                        <div>
+                            <h4>Ethically Sourced</h4>
+                            <p>Direct trade with farmers worldwide.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🍫</div>
+                        <div>
+                            <h4>Small Batch</h4>
+                            <p>Hand-tempered for the perfect snap.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>Have a question or custom request? Our chocolatiers are here to help.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info-panel">
+                    <div class="info-card">
+                        <div class="info-card-icon">📍</div>
+                        <div class="info-card-content">
+                            <h4>Our Boutique</h4>
+                            <p>123 Artisanal Way, Chocolate District<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">📞</div>
+                        <div class="info-card-content">
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 234-5678<br>Mon-Sat, 9am - 6pm</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">✉️</div>
+                        <div class="info-card-content">
+                            <h4>Email Us</h4>
+                            <p>concierge@cocoaluxe.com<br>support@cocoaluxe.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-panel">
+                    <form id="contact-form-element" class="main-contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="c-name">Full Name</label>
+                                <input type="text" id="c-name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="c-email">Email Address</label>
+                                <input type="email" id="c-email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-subject">Subject</label>
+                            <input type="text" id="c-subject" placeholder="Custom Order, Delivery Inquiry, etc.">
+                        </div>
+                        <div class="form-group">
+                            <label for="c-message">Message</label>
+                            <textarea id="c-message" rows="5" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div id="contact-success-msg" class="form-success-alert" style="display: none;">
+                        <h3>Message Sent!</h3>
+                        <p>Thank you for reaching out. We will get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter section">
+        <div class="container newsletter-box">
+            <div class="newsletter-content">
+                <h2>Join the Sweetest Club</h2>
+                <p>Subscribe for exclusive releases and 10% off your first order.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <div class="footer-brand">
+            <a href="#" class="logo"><span>COCOA</span>LUXE</a>
+            <p>Elevating the art of chocolate through tradition and innovation.</p>
+            <div class="socials">
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Twitter">TW</a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Shop</h4>
+            <ul>
+                <li><a href="#">Truffles</a></li>
+                <li><a href="#">Gift Boxes</a></li>
+                <li><a href="#">Chocolate Bars</a></li>
+                <li><a href="#">Subscriptions</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom container">
+        <p>&copy; 2024 CocoaLuxe Chocolatier. All rights reserved.</p>
+    </div>
+</footer>
+
+<div class="cart-sidebar">
+    <div class="cart-header">
+        <h3>Your Basket</h3>
+        <button class="cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    
+    <div class="cart-content-wrapper">
+        <div class="cart-view active">
+            <div class="cart-items">
+                <p class="empty-msg">Your basket is empty.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="total">
+                    <span>Total:</span>
+                    <span class="total-amount">$0.00</span>
+                </div>
+                <button class="btn btn-primary w-100 checkout-init-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+
+        <div class="checkout-view">
+            <button class="back-to-cart">← Back to Basket</button>
+            <form id="checkout-form" class="checkout-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="address">Shipping Address</label>
+                    <input type="text" id="address" required placeholder="123 Cocoa St, Chocotown">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" required placeholder="New York">
+                    </div>
+                    <div class="form-group">
+                        <label for="zip">Zip Code</label>
+                        <input type="text" id="zip" required placeholder="10001">
+                    </div>
+                </div>
+                <div class="payment-selection">
+                    <label>Payment Method</label>
+                    <div class="payment-options">
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="card" checked>
+                            <span>Credit Card</span>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="cash">
+                            <span>Cash on Delivery</span>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Place Order</button>
+            </form>
+        </div>
+
+        <div class="success-view">
+            <div class="success-icon">✓</div>
+            <h3>Order Confirmed!</h3>
+            <p>Thank you for choosing CocoaLuxe. Your artisanal chocolates are being prepared.</p>
+            <p class="order-id">Order ID: #<span id="order-id-display">0000</span></p>
+            <button class="btn btn-outline w-100 close-after-success">Continue Shopping</button>
+        </div>
+    </div>
+</div>
+<div class="overlay"></div>
+  <script src="script.js"></script>
+</body>
+</html>
